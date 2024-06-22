@@ -1,0 +1,109 @@
+
+        :root {
+            --primary-color: #99a98f;
+            --decent-color: #d6e8db;
+            --accent-color: #fff;
+            --secondary-color: rgb(9, 189, 9);
+            --font-family: 'Poppins', sans-serif;
+            --text-color: gray;
+            --background-color: #f0f0f0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: var(--accent-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--text-color);
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--decent-color);
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: var(--primary-color);
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg fill="%2399a98f" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+            background-position: right 15px center;
+            background-repeat: no-repeat;
+            background-size: 20px;
+            padding-right: 50px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: var(--primary-color);
+            color: var(--accent-color);
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .btn-submit:active {
+            background-color: darken(var(--secondary-color), 10%);
+        }

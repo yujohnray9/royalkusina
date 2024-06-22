@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles/styles.css" />
+      <link rel="icon" href="../assets/Logocover-Photoroom.png" />
+      <script defer src="script/main.js"></script>
+      <script defer src="../script/userprofile.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+      <title>Royal Kusina</title>
+   </head>
+   <body>
+      <header class="header">
+         <nav class="header-menu">
+            <div class="search-box">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               <input type="text" id="searchInput" placeholder="Search" />
+            </div>
+            <div class="menu-icons">
+               <div class="bowl-icon">
+                  <i class="fa-solid fa-bowl-food"></i>
+                  <span>0</span>
+               </div>
+               <div class="cart-icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>0</span>
+               </div>
+               <div class="user-icon">
+                  <i class="fa-solid fa-user"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <section class="cover">
+         <div class="cover-overlay">
+            <h1>Royal Kusina</h1>
+            <span class="slogan">Nagiisang karinderya</span>
+         </div>
+      </section>
+
+      <div class="popup-card1" id="popupCard1">
+         <div class="card-content"></div>
+      </div>
+
+      <div class="popup-card2" id="popupCard2" style="display: none">
+         <form id="addInfoForm">
+            <label for="name">Name:</label>
+            <input
+               type="text"
+               id="name"
+               name="name"
+               required
+               autocomplete="off"
+            />
+            <label for="address">Address:</label>
+            <input
+               type="text"
+               id="address"
+               name="address"
+               required
+               autocomplete="off"
+            />
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required />
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required />
+            <label for="contact">Contact:</label>
+            <input type="number" id="contact" name="contact" required />
+            <button type="submit">Submit</button>
+            <button type="button" id="cancelBtn">Cancel</button>
+         </form>
+      </div>
+
+      <main>
+         <h2 class="section-heading">Food Menu</h2>
+         <div class="menu-list" id="menuList"></div>
+
+         <h2 class="section-heading">Food Items</h2>
+         <div class="card-list" id="foodItems"></div>
+      </main>
+
+      <div class="sidebar1" id="sidebar1">
+         <div class="sidebar-close1">
+            <i class="fa-solid fa-close"></i>
+         </div>
+         <div class="cart-menu1">
+            <h3>My Favorites</h3>
+            <div class="favorites-items" id="favoritesContainer"></div>
+         </div>
+      </div>
+
+      <div class="sidebar" id="sidebar">
+         <div class="sidebar-close">
+            <i class="fa-solid fa-close"></i>
+         </div>
+         <div class="cart-menu">
+            <h3>My Cart</h3>
+            <div class="cart-items"></div>
+         </div>
+         <div class="sidebar-footer">
+            <div class="total-amount">
+               <h5>Total</h5>
+               <div class="cart-total">₱0.00</div>
+            </div>
+            <div class="button-container">
+               <button id="checkoutButton" class="checkout-btn">
+                  Checkout
+               </button>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+      <div class="container">
+         <div class="footer-content">
+            <div class="footer-about">
+               <h3>Royal Kusina</h3>
+               <p>Welcome to Royal Kusina, your number one source for all delicious pinoy food. We're dedicated to providing you the best pinoy food experience.</p>
+            </div>
+            <div class="footer-links">
+               <h3>Quick Links</h3>
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Menu</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About Us</a></li>
+               </ul>
+            </div>
+            <div class="footer-social">
+               <h3>Follow Us</h3>
+               <ul class="social-icons">
+                  <li><a href="https://www.facebook.com/profile.php?id=100063637147863" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <p>&copy; 2024 Royal Kusina. All rights reserved.</p>
+         </div>
+      </div>
+   </footer>
+   </body>
+</html>
